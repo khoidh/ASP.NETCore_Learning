@@ -1,0 +1,7 @@
+﻿{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": []
+}
+//nó sẽ tạo ra file libman.json nơi bạn có thể thêm hay xóa các thư viện phía client. 
+//  Nó sẽ tự tạo folder  theo thuộc tính destination của từng thư viện.
