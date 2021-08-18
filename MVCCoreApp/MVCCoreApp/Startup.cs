@@ -39,8 +39,9 @@ namespace MVCCoreApp
             {
                 // Set Default is DefaultController
                 endpoints.MapControllerRoute(
-                    "default",
-                    "{controller=Default}/{action=Index}/{id?}");
+                    "home", "{controller=Home}/{action=Index}/{id?}"
+                    );
+                endpoints.MapControllerRoute("default", "{controller=Default}/{action=Index}/{id?}");
 
                 // Set default la HomeController
                 //endpoints.MapControllerRoute(
@@ -53,13 +54,13 @@ namespace MVCCoreApp
                 //    "admin/{controller=Home}/{action=Index}/{id?}");
             });
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapGet("/", async context =>
-            //    {
-            //        await context.Response.WriteAsync("Hello World!");
-            //    });
-            //});
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapGet("/", async context =>
+                {
+                    await context.Response.WriteAsync("Failed to find route!");
+                });
+            });
         }
     }
 }

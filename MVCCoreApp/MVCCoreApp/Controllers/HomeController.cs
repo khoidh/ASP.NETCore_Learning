@@ -19,7 +19,7 @@ namespace MVCCoreApp.Controllers
         public IActionResult Index(int id)
         {
             var model = new IndexModel();
-            model.Message = "Hello from Model, ID= "+ id.ToString();
+            model.Message = "Hello from Home Model, ID= "+ id.ToString();
             return View(model);
         }
 
