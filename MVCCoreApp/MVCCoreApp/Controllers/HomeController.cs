@@ -16,10 +16,24 @@ namespace MVCCoreApp.Controllers
         //    return View(model);
         //}
 
-        public IActionResult Index(int id)
+        //public IActionResult Index(int id)
+        //{
+        //    var model = new IndexModel();
+        //    model.Message = "Hello from Home Model, ID= "+ id.ToString();
+        //    return View(model);
+        //}
+
+        //public IActionResult Index(int year)
+        //{
+        //    var model = new IndexModel();
+        //    model.Message = "Hello from Home Model, ID= " + year;
+        //    return View(model);
+        //}
+
+        public IActionResult Index(string id)
         {
             var model = new IndexModel();
-            model.Message = "Hello from Home Model, ID= "+ id.ToString();
+            model.Message = "Hello from Home Model, ID (alpha & minleng(6))= " + id;
             return View(model);
         }
 
