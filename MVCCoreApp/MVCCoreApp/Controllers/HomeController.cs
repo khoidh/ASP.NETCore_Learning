@@ -30,16 +30,23 @@ namespace MVCCoreApp.Controllers
         //    return View(model);
         //}
 
-        public IActionResult Index(string id)
-        {
-            var model = new IndexModel();
-            model.Message = "Hello from Home Model, ID (alpha & minleng(6))= " + id;
-            return View(model);
-        }
-
-        //public string Index()
+        //public IActionResult Index(string id)
         //{
-        //    return "Hello from index methor of HomeController!";
+        //    var model = new IndexModel();
+        //    model.Message = "Hello from Home Model, ID (alpha & minleng(6))= " + id;
+        //    return View(model);
         //}
+
+        public ActionResult Index(int id)
+        {
+            if (id == 0)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Content("Hello");
+            }
+        }
     }
 }

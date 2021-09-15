@@ -16,9 +16,9 @@ namespace MVCCoreApp.Controllers
 
         //[Route("")]                           // Set default when link = "/"
         [Route("khach-hang/normal/{id?}")]
-        public string Normal(int id)
+        public IActionResult Normal(int id)
         {
-            return $"Khách hàng thường với id: {id}";
+            return Content($"Khách hàng thường với id: {id}");
         }
     }
 }
