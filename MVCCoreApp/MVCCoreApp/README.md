@@ -5,6 +5,8 @@ https://www.youtube.com/watch?v=XE2zWzhqXlk&list=PLRhlTlpDUWsxSup77UnO2pWEkr4ahT
 https://www.youtube.com/watch?v=tH1b3GepC-Q&list=PLRhlTlpDUWsxSup77UnO2pWEkr4ahTohJ&index=19
 - #20: View trong ASP.NET Core | Views in ASP.NET Core | TEDU:
 https://www.youtube.com/watch?v=qwTjMkVLRFM&list=PLRhlTlpDUWsxSup77UnO2pWEkr4ahTohJ&index=20
+- #21: Razor View Engine | TEDU
+https://www.youtube.com/watch?v=DHGTIBqmiPg&list=PLRhlTlpDUWsxSup77UnO2pWEkr4ahTohJ&index=21
 # Link web:
 - Action Selectors & Action Verbs trong ASP.NET Core:
 https://tedu.com.vn/lap-trinh-aspnet-core/action-selectors-action-verbs-trong-aspnet-core-232.html
@@ -14,3 +16,5 @@ https://tedu.com.vn/lap-trinh-aspnet-core/action-result-trong-aspnet-core-237.ht
 https://netcore.vn/bai-viet/nhung-loai-action-results-trong-aspnet-core
 - View trong ASP.NET Core
 https://tedu.com.vn/lap-trinh-aspnet-core/view-trong-aspnet-core-239.html
+- Razor View Engine trong ASP.NET Core MVC
+https://tedu.com.vn/lap-trinh-aspnet-core/razor-view-engine-trong-aspnet-core-mvc-240.html

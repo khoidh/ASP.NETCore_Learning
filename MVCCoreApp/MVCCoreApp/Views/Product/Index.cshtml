@@ -1,0 +1,62 @@
+﻿@using MVCCoreApp.Models
+@model List<ProductModel>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Product list</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Available</th>
+                <th>Price</th>
+                <th>Promotion Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.Id</td>
+                        <td>@product.Name</td>
+                        <td>
+                            @{
+                                @* Comment: xét điều kiện in còn hàng hoặc hết hàng *@
+                                if (@product.Available == true)
+                                {
+                                    <strong>Available</strong>
+                                }
+                                else
+                                {
+                                    //<strong>Hết hàng | Out of stock</strong>
+                                    @:Hết hàng | Out of stock
+                                }
+                            }
+                        </td>
+                        <td>@product.Price</td>
+                        <td>@product.PromotionS</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    Total of products: @Model.Count
+
+    @*Nếu bạn muốn script thực thi, bạn bạn cần sử dụng @Html.Raw để int chuỗi không mã hóa ra.*@
+    @{
+        string encodedMessage = "<script>alert('You are under cross-site script injection attack');</script>";
+    }
+    <span>@Html.Raw(encodedMessage) </span>
+
+</body>
+</html>
